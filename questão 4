@@ -1,0 +1,13 @@
+function ehPalindromo(str) {
+
+  const strLimpa = str.replace(/\s+/g, '').toLowerCase();
+  
+  const strInvertida = strLimpa.split('').reverse().join('');
+  
+  return strLimpa === strInvertida;
+}
+
+
+console.log(ehPalindromo("arara"));      
+console.log(ehPalindromo("socorram-me, subi no onibus em Marrocos")); 
+console.log(ehPalindromo("java"));   
