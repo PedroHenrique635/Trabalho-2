@@ -1,0 +1,23 @@
+function contarOcorrencias(arr) {
+
+  const frequencias = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const numero = arr[i];
+    
+    
+    if (frequencias[numero]) {
+      frequencias[numero]++;
+    } else {
+    
+      frequencias[numero] = 1;
+    }
+  }
+
+  return frequencias;
+}
+
+const numeros = [1, 2, 2, 3, 3, 3, 4];
+const resultado = contarOcorrencias(numeros);
+console.log(resultado); 
+
